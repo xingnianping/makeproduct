@@ -1,0 +1,1394 @@
+.main {
+    margin-left: 140px;
+}
+
+body {
+    background: #e3e8e7;
+}
+
+
+/* S nav*/
+
+nav {
+    background-color: #394658;
+    border-right: 1px solid #606c7d;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 140px;
+    z-index: 2;
+    border-right: #f2f2f2 1px solid;
+    overflow-y: auto;
+    padding-bottom: 30px;
+    overflow-x: hidden;
+}
+
+.nav-list li {
+    padding: 0 13px;
+    line-height: 60px;
+    transition: .4s;
+}
+
+.nav-list li:hover {
+    background: #f2f2f2;
+}
+
+.nav-list li:hover a {
+    text-decoration: none;
+}
+
+.nav-list li a {
+    color: #83939f;
+    display: block;
+    font-size: 14px;
+    position: relative;
+    padding-left: 22px;
+    text-align: left;
+}
+
+.nav-list li.on {
+    background: #3488fa;
+}
+
+.nav-list li.on a {
+    color: #fff;
+}
+
+.nav-logo {
+    margin: 20px 0 20px 20px;
+}
+
+
+/* E nav*/
+
+
+/* S top*/
+
+.top {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 52px;
+    line-height: 52px;
+    border-bottom: 1px solid #e3e8e7;
+    background-color: #fff;
+}
+
+.top-txt,
+.top-shopname,
+.top-quit {
+    position: absolute;
+}
+
+.top-txt {
+    left: 20px;
+}
+
+.top-shopname {
+    right: 45px;
+    color: #bfbfbf;
+}
+
+.top-quit {
+    right: 15px;
+    cursor: pointer;
+}
+
+.icon-quit {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-position: 0 0;
+    vertical-align: middle;
+}
+
+.icon-quit,
+.icon-zcp-suc,
+.icon-zcp-fail,
+.modify-price-arw .icon-arw,
+.ui-plist ul li.selected::before,
+.table-select,
+.table-select.selected {
+    background-image: url(../images/bg.png);
+    background-repeat: no-repeat;
+}
+
+.list-hover li {
+    transition: .4s;
+}
+
+.list-hover li:hover {
+    box-shadow: 0px 0px 15px #cacaca;
+}
+
+
+/* E top */
+
+
+/* S 首页 */
+
+.make-index-list {
+    margin-left: 12px;
+}
+
+.make-index-list li {
+    float: left;
+    width: 268px;
+    height: 247px;
+    background: #fff;
+    border-radius: 5px;
+    margin: 12px 0 0 12px;
+    box-sizing: border-box;
+    padding: 16px;
+    position: relative;
+}
+
+.make-index-list li:nth-child(4n+1) {
+    margin-left: 0;
+}
+
+.make-index-list li h2 {
+    font-weight: 500;
+}
+
+.make-index-list-top {
+    margin-top: 2px;
+    line-height: 15px;
+}
+
+.make-index-list-middle,
+.make-index-list-bot {
+    position: absolute;
+}
+
+.make-index-list-middle {
+    bottom: 76px;
+    width: 240px;
+}
+
+.make-index-list-bot {
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+}
+
+.act i {
+    transition: .4s;
+}
+
+.act:hover i {
+    color: #388CF6;
+    transform: translateX(4px);
+}
+
+
+/* E 首页 */
+
+
+/* S 制作商品 */
+
+.top-bot {
+    height: 62px;
+    line-height: 62px;
+    padding: 0 20px;
+    background: #fff;
+}
+
+.product-list {
+    justify-content: space-between;
+    margin: 12px;
+    flex-wrap: wrap;
+}
+
+.product-list li {
+    width: 535px;
+    height: 192px;
+    border-radius: 6px;
+    background: #fff;
+    box-sizing: border-box;
+    padding: 12px;
+    position: relative;
+    margin-bottom: 12px;
+}
+
+.product-list img {
+    width: 168px;
+    height: 168px;
+}
+
+.product-list li .name {
+    line-height: 21px;
+    font-weight: 500;
+    height: 42px;
+    overflow: hidden;
+}
+
+.product-list li .text {
+    padding-top: 5px;
+}
+
+.st-dialog__body .product-list {
+    background-color: #f2f2f2;
+    margin: 12px 0 0;
+    border-radius: 6px;
+}
+
+.st-dialog__body .product-list li {
+    background-color: transparent;
+}
+
+.product-info {
+    width: 330px;
+    margin-left: 10px;
+}
+
+.product-option {
+    position: absolute;
+    right: 18px;
+    bottom: 12px;
+}
+
+.product-option .button-xs {
+    margin-left: 24px;
+}
+
+.product-header-btn-blue {
+    bottom: 0;
+    right: 0;
+}
+
+.product-header-btn-white {
+    bottom: 0;
+    right: 194px;
+    box-sizing: border-box;
+}
+
+.product-list .img-m {
+    width: 168px;
+    height: 168px;
+}
+
+.product-list-popup {
+    width: 686px;
+    background: #fff;
+    z-index: 6;
+    box-sizing: border-box;
+    padding: 0 47px;
+}
+
+.make-instruction-title {
+    margin: 38px 0 0 0;
+    font-weight: normal;
+}
+
+.make-instruction-text {
+    margin-top: 7px;
+}
+
+.product-list-pop-detail {
+    padding-top: 35px;
+}
+
+.product-list-pop-detail .name {
+    width: 390px;
+    margin-right: 10px;
+}
+
+.product-list-pop-detail .material-box {
+    margin-top: 10px;
+}
+
+.product-list-pop-detail .material-name {
+    max-width: 422px;
+}
+
+.product-list-popup .material-name {
+    line-height: 20px;
+}
+
+.product-list-popup .material-box {
+    padding-bottom: 20px;
+    margin-top: 7px;
+}
+
+.product-list-popup .button-box {
+    margin: 40px;
+}
+
+
+/* E 制作商品 */
+
+
+/* S 制作商品-填写实际制作数量*/
+
+.product-list-wrap {
+    justify-content: space-between;
+    margin: 12px;
+    flex-wrap: wrap;
+    border-radius: 6px;
+    padding: 12px;
+    background: #fff;
+    height: 156px;
+    box-sizing: border-box;
+}
+
+.product-list-detail,
+.product-list-num {
+    width: 554px;
+    position: relative;
+}
+
+.product-list-detail {
+    width: 497px;
+}
+
+.product-list-detail .img-s {
+    width: 132px;
+    height: 132px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+
+.product-list-wrap .name {
+    line-height: 21px;
+    font-weight: 500;
+    height: 42px;
+    overflow: hidden;
+}
+
+.product-list-wrap .text {
+    padding-top: 5px;
+}
+
+.product-list-wrap .product-info {
+    width: 330px;
+    margin-right: 22px;
+}
+
+.product-list-num {
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-list-num .minnumber-tips {
+    left: 0;
+    right: 0;
+}
+
+.product-list-num::before {
+    position: absolute;
+    left: 0;
+    top: 5px;
+    bottom: 5px;
+    border-left: 1px solid #DCDCDC;
+    content: '';
+}
+
+.header-button-l {
+    width: 138px;
+    right: 0;
+    background: #388CF6;
+    color: #fff;
+    bottom: 0;
+}
+
+.product-list-detail .tag-zcp {
+    left: 4px;
+    top: 4px;
+}
+
+.product-popup-suc {
+    width: 508px;
+    background: #fff;
+    z-index: 6;
+}
+
+.pop-suc-box {
+    padding: 40px 0 70px;
+}
+
+.pop-suc-box .tips {
+    /* margin-left: 10px; */
+    line-height: 20px;
+}
+
+.icon-zcp-suc,
+.icon-zcp-fail {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.icon-zcp-suc {
+    background-position: 0 -77px;
+}
+
+.icon-zcp-fail {
+    background-position: 0 -130px;
+}
+
+.product-receive-record .records-item.active .rs-item-c {
+    border-color: #F2F2F2;
+}
+
+.product-receive-record .rs-item-c {
+    background: #F2F2F2;
+    border-color: #F2F2F2;
+}
+
+.product-receive-record .timeAxis-v .timeAxis-item.active .timeAxis-item-c:before {
+    border-right-color: #F2F2F2;
+}
+
+.timeAxis-v .timeAxis-item:nth-last-child(1):first-child:before {
+    height: 0;
+}
+
+.product-receive-record .timeAxis-item-c:after,
+.timeAxis-item-c:before {
+    border-right: 12px solid #F2F2F2;
+}
+
+.product-receive-record .time+div .material-records-option:first-child {
+    margin-top: 0;
+}
+
+.product-receive-record .time {
+    width: 130px;
+}
+
+.product-receive-record .time+div {
+    width: 880px;
+}
+
+.product-receive-record-suc .timeAxis-item-c:after,
+.product-receive-record-suc .timeAxis-item-c:before {
+    border: none;
+}
+
+.product-receive-record-suc .rs-item-c {
+    border-color: #e3e8e7;
+    background: #e3e8e7;
+}
+
+.product-receive-record-suc .records-item.active .rs-item-c {
+    border-color: #e3e8e7;
+}
+
+.product-receive-record-suc .timeAxis-v .timeAxis-item:nth-last-child(1):before {
+    height: 50%;
+    top: -8px;
+}
+
+.product-receive-record-suc .timeAxis-v .timeAxis-item:nth-child(1):before {
+    height: 100%;
+    top: 18px;
+}
+
+.product-receive-record-suc .timeAxis-v .timeAxis-item:after {
+    top: 17px;
+    transform: translateY(0);
+}
+
+.product-receive-record-suc .timeAxis.timeAxis-v {
+    padding-left: 38px;
+}
+
+.product-receive-record-suc .timeAxis-v .timeAxis-item:after {
+    left: -17px;
+}
+
+.product-receive-record-suc .timeAxis-v .timeAxis-item:before {
+    left: -10px;
+}
+
+.product-receive-record-suc .time {
+    width: 150px;
+}
+
+
+/* E 制作商品-填写实际制作数量 */
+
+
+/* S 制作商品-没有可制作商品 */
+
+.search-null .tips {
+    margin-top: 8px;
+}
+
+.search-null .button-box {
+    margin-top: 45px;
+}
+
+
+/* E 制作商品-没有可制作商品 */
+
+
+/* S 制成品改价 */
+
+.product-list-popup-s {
+    width: 648px;
+}
+
+.product-list-popup .product-list {
+    margin: 12px 0 0;
+}
+
+.product-list-popup .product-list li {
+    background: #f2f2f2;
+    width: 535px;
+}
+
+.select-price-tips {
+    padding-top: 30px;
+}
+
+.select-price {
+    margin: 8px 0 54px;
+    text-align: center;
+}
+
+.select-price li {
+    display: inline-block;
+    width: 72px;
+    height: 32px;
+    line-height: 32px;
+    background: #F5F5F5;
+    border: 1px solid #DCDCDC;
+    margin: 0 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.select-price li.current {
+    border: 1px solid #388CF6;
+    background: #388CF6;
+    color: #fff;
+}
+
+.modify-price-wrap {
+    margin: 66px 0 0;
+    justify-content: center;
+}
+
+.modify-price-box {
+    width: 168px;
+    height: 168px;
+    background: #F2F2F2;
+}
+
+.modify-price-box,
+.modify-price-arw {
+    align-items: center;
+    justify-content: center;
+}
+
+.modify-price-arw {
+    width: 104px;
+    height: 168px;
+    align-content: center;
+}
+
+.modify-price-arw .icon-arw {
+    width: 48px;
+    height: 31px;
+    background-position: 0 -43px;
+}
+
+.modify-price-record {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.modify-price-record::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+
+.modify-price-record::-webkit-scrollbar-track {
+    background: #f6f6f6;
+    border-radius: 2px;
+}
+
+.modify-price-record::-webkit-scrollbar-thumb {
+    background: #aaa;
+    border-radius: 2px;
+}
+
+.modify-price-record::-webkit-scrollbar-thumb:hover {
+    background: #747474;
+}
+
+.modify-price-record::-webkit-scrollbar-corner {
+    background: #f6f6f6;
+}
+
+.timeline-wrap {
+    margin: 20px 0 30px 0px;
+    position: relative;
+    width: 100%;
+    background: #fff;
+    font-size: 0;
+    white-space: nowrap;
+}
+
+.timeline-one {
+    position: relative;
+    display: inline-block;
+    width: 85px;
+    margin-right: 25px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+}
+
+.timeline-one::after {
+    content: '';
+    position: absolute;
+    width: 110px;
+    height: 1px;
+    top: 36px;
+    left: 0;
+    background: #c8cecd;
+    z-index: 1;
+}
+
+.timeline-one:first-child::after {
+    left: 42.5px;
+}
+
+.timeline-one:only-child::after {
+    display: none;
+}
+
+.timeline-one:last-child::after {
+    left: -67.5px;
+}
+
+.timeline-one .tit {
+    line-height: 21px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+/* .timeline-one:nth-child(odd) .tit {
+    color: #e63300;
+}
+
+.timeline-one:nth-child(even) .tit {
+    color: #46a649;
+} */
+
+.timeline-one .content {
+    margin-top: 32px;
+    color: #323232;
+    font-size: 14px;
+}
+
+.timeline-one .time {
+    line-height: 13px;
+    color: #969696;
+    font-size: 12px;
+}
+
+.timeline-one .circle {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    top: 29px;
+    left: 50%;
+    margin-left: -7px;
+    background: #a6aeac;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+
+/* 
+.timeline-one .circle.current {
+    background: #46a649;
+} */
+
+
+/* E 制成品改价 */
+
+
+/* S 原材料管理 */
+
+.ui-plist {
+    margin: 0 0 0 10px;
+}
+
+.ui-plist ul li {
+    position: relative;
+    float: left;
+    width: 210px;
+    background-color: #ffffff;
+    margin-left: 5px;
+    margin-top: 12px;
+    position: relative;
+    border: 1px solid #dcdcdc;
+    transition: .4s;
+}
+
+.ui-plist ul li:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 15px #cacaca;
+}
+
+.ui-plist ul li.selected {
+    border: 1px solid #2ECC34;
+}
+
+.ui-plist ul li.selected::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 38px;
+    height: 36px;
+    background-position: -53px 0;
+}
+
+.ui-pitem {
+    width: 210px;
+    padding-bottom: 12px;
+    position: relative;
+}
+
+.ui-pimg {
+    width: 210px;
+    height: 210px;
+    position: relative;
+}
+
+.ui-pimg img {
+    width: 210px;
+    height: 210px;
+}
+
+.ui-price-wrap {
+    height: 67px;
+}
+
+.ui-pmoney {
+    overflow: hidden;
+    line-height: 20px;
+    padding: 0 10px 16px;
+}
+
+.ui-price {
+    color: #e63300;
+}
+
+.ui-price,
+.ui-price1 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.ui-price .ui-tag1,
+.ui-tag1 {
+    font-size: 12px;
+    font-style: normal;
+    color: #969696;
+    font-weight: normal;
+}
+
+.ui-pname {
+    margin: 8px 10px;
+    color: #000000;
+    line-height: 18px;
+    overflow: hidden;
+    height: 36px;
+    word-wrap: break-word;
+}
+
+.ui-pinfo {
+    padding: 0 10px;
+    font-size: 12px;
+    color: #969696;
+    line-height: 26px;
+}
+
+.ui-num {
+    width: 94px;
+}
+
+.ui-num-box {
+    padding: 0px 12px;
+}
+
+.ui-num-txt {
+    width: 92px;
+    line-height: 26px;
+}
+
+.save-text-box {
+    width: 294px;
+}
+
+.save-text-right {
+    margin-right: 15px;
+}
+
+.select-tz-wrap {
+    max-height: 400px;
+    margin-top: 37px;
+    margin-bottom: 57px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+
+/* 确认领取弹窗提示微调 */
+
+.st-dialog .select-tz-wrap .minnumber-tips {
+    padding-top: 0;
+    width: 120px;
+    left: -9px;
+}
+
+.mainlist-h {
+    height: 30px;
+    line-height: 30px;
+}
+
+.mainlist-h div {
+    float: left;
+    font-size: 10px;
+}
+
+.mb12 {
+    margin-bottom: 12px;
+}
+
+.main-list-space:first-child {
+    border-top: none;
+}
+
+.main-list-space {
+    margin: 0;
+    background: #fafafa;
+    padding: 12px;
+    position: relative;
+    border-color: #e5eaea;
+}
+
+.main-list {
+    border-top: #ced9d8 1px solid;
+    padding: 12px 2px;
+    display: table;
+    width: 100%;
+    /* cursor: pointer; */
+    box-sizing: border-box;
+    background: #f2f2f2;
+    margin-bottom: 4px;
+}
+
+.mainlist-con1,
+.mainlist-con2,
+.mainlist-con3,
+.mainlist-con5,
+.mainlist-con4,
+.mainlist-con6,
+.mainlist-con66 {
+    display: table-cell;
+    vertical-align: middle;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.group-list {
+    padding: 0 12px 0 46px;
+}
+
+.border-r {
+    border-right: #e3e8e7 1px solid;
+}
+
+.group-list .list-info:first-child {
+    padding-top: 0;
+}
+
+.group-list .border-t:first-child {
+    border-top: none;
+}
+
+.group-list .list-info {
+    padding: 12px 12px 0 0;
+}
+
+.main-list-space .p-img {
+    width: 44px;
+    height: 44px;
+    margin-left: 0px;
+}
+
+.p-img {
+    margin: 0 12px 0px 12px;
+}
+
+.p-info {
+    width: 67%;
+}
+
+.main-list-space .p-name {
+    max-height: 20px;
+}
+
+.p-name {
+    max-height: 40px;
+    overflow: hidden;
+}
+
+.table-select {
+    left: 14px;
+    top: 26px;
+    width: 20px;
+    height: 20px;
+    background-position: 0 -21px;
+}
+
+.table-select.selected {
+    background-position: -28px -21px;
+}
+
+.material-list .mainlist-h {
+    background: #F2F2F2;
+}
+
+.material-list .main-list {
+    background: #fff;
+}
+
+.material-list {
+    margin: 12px;
+}
+
+.material-list .mainlist-h1 {
+    text-indent: 12px;
+}
+
+.material-list .p-img {
+    width: 80px;
+    height: 80px;
+}
+
+.material-list .group-list,
+.material-pupup-confirm .group-list {
+    padding-left: 12px;
+}
+
+.material-list .main-list {
+    margin-bottom: 6px;
+}
+
+.mt8 {
+    margin-top: 8px;
+}
+
+.material-list .select-tz-wrap {
+    margin-top: 0;
+    max-height: none;
+}
+
+.material-pupup-confirm .table-select {
+    display: none;
+}
+
+.rs-container {
+    padding: 10px;
+}
+
+div.records,
+ul.records {
+    padding: 0;
+    margin: 0;
+}
+
+ul.records {
+    list-style: none;
+}
+
+.rs-item-c {
+    padding: 13px;
+    background-color: white;
+}
+
+.records-item.active .rs-item-c {
+    border-color: #2ECC34;
+}
+
+.timeAxis {
+    padding: 0px;
+    position: relative;
+}
+
+.timeAxis.timeAxis-v {
+    padding-left: 60px;
+}
+
+.timeAxis-item {
+    position: relative;
+}
+
+.timeAxis-v .timeAxis-item {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.timeAxis-item:after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    background-color: #A6AEAC;
+    position: absolute;
+}
+
+.timeAxis-item:before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: #C8CECD;
+    position: absolute;
+}
+
+.timeAxis-v .timeAxis-item:before {
+    left: -33px;
+}
+
+.timeAxis-v .timeAxis-item:nth-child(1):before {
+    height: 50%;
+    top: calc(50% + 7px);
+}
+
+.timeAxis-v .timeAxis-item:nth-last-child(1):before {
+    height: 50%;
+    top: 0;
+}
+
+.timeAxis-v .timeAxis-item:after {
+    left: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.rs-item-c {
+    border: 2px solid white;
+    border-radius: 4px;
+}
+
+.timeAxis-item-c:after,
+.timeAxis-item-c:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-right: 12px solid white;
+    border-bottom: 8px solid transparent;
+    position: absolute;
+}
+
+.timeAxis-v .timeAxis-item-c:after,
+.timeAxis-v .timeAxis-item-c:before {
+    left: -12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.timeAxis-v .timeAxis-item.active .timeAxis-item-c:before {
+    border-right-color: #2ECC34;
+}
+
+.timeAxis-v .timeAxis-item.active .timeAxis-item-c:after {
+    left: -9px;
+}
+
+.timeAxis-h .timeAxis-item {
+    float: left;
+}
+
+.timeAxis.no-arrow .timeAxis-item-c:after,
+.timeAxis.no-arrow .timeAxis-item-c:before {
+    content: "";
+    display: none;
+}
+
+.timeAxis-h .timeAxis-item-c {
+    padding: 0px 34px;
+}
+
+.timeAxis-h .timeAxis-item-c-bottom {
+    padding-top: 30px;
+}
+
+.timeAxis-h .timeAxis-item:after {
+    left: 50%;
+    top: 7px;
+    transform: translateX(-50%);
+}
+
+.timeAxis-h .timeAxis-item:before {
+    height: 1px;
+    width: 100%;
+    top: 14px;
+}
+
+.timeAxis-h .timeAxis-item:nth-child(1):before {
+    left: 50%;
+    width: 50%;
+}
+
+.timeAxis-h .timeAxis-item:nth-last-child(1):before {
+    right: 50%;
+    width: 50%;
+}
+
+.timeAxis-h.has-v-top .timeAxis-item:before {
+    top: 34px;
+}
+
+.timeAxis-h.has-v-top .timeAxis-item:after {
+    top: 27px;
+}
+
+.timeAxis-item.active:after,
+.product-receive-record .timeAxis-item:first-child:after {
+    background-color: #46A649;
+}
+
+.timeAxis-item.active:after .material-records-option {
+    margin-top: 10px;
+}
+
+.material-records-option span {
+    margin-right: 28px;
+}
+
+.ui-table-gray {
+    background-color: #f2f2f2;
+}
+
+.ui-table {
+    padding: 0px 0px;
+    display: table;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.mainlist-con {
+    display: table-row;
+}
+
+.make-p-info {
+    line-height: 20px;
+    padding-left: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.make-p-info span {
+    float: left;
+}
+
+.make-p-name {
+    overflow: hidden;
+    height: 20px;
+    display: inline-block;
+}
+
+.material-receive-record {
+    margin: 12px;
+}
+
+.material-receive-tablehead {
+    height: 45px;
+    line-height: 45px;
+}
+
+.material-receive-tablehead span {
+    padding-left: 18px;
+}
+
+.border-t {
+    border-top: #e3e8e7 1px solid;
+}
+
+.header-search-wrap {
+    top: 0px;
+    left: 477px;
+}
+
+
+/* E 原材料管理 */
+
+
+/* S 计数器 */
+
+.cart-num {
+    margin: 10px auto 10px;
+    width: 175px;
+    height: 45px;
+    position: relative;
+}
+
+a.cartCountBtn {
+    color: #646464;
+    cursor: pointer;
+    display: inline-block;
+    height: 45px;
+    line-height: 45px;
+    text-decoration: none;
+    width: 54px;
+    font-size: 18px;
+    border: #b2b2b2 1px solid;
+    font-weight: bold;
+    background-color: #f6f6f6;
+}
+
+.ui-num a.cartCountBtn {
+    font-size: 14px;
+}
+
+a.cartCountBtn-s {
+    height: 26px;
+    line-height: 26px;
+    width: 28px;
+    font-size: 18px;
+}
+
+a.cartCountBtn,
+input.amount,
+input.amount1 {
+    float: left;
+    vertical-align: middle;
+    padding: 0px;
+    text-align: center;
+    transition: .4s;
+}
+
+a.cartCountBtn:first-child {
+    border-right: none;
+    border-radius: 4px 0 0 4px;
+}
+
+a.cartCountBtn.unclick {
+    color: #dcdcdc;
+    cursor: default;
+}
+
+.cartCountBtn.add:hover,
+.cartCountBtn.subtract:hover,
+a.cartCountBtn:last-child:hover,
+a.cartCountBtn:first-child:hover {
+    color: #388CF6;
+    position: relative;
+}
+
+a.cartCountBtn.unclick:hover {
+    color: #dcdcdc !important;
+}
+
+input.amount:hover,
+input.amount:focus {
+    border-top-color: #388CF6;
+    border-bottom-color: #388CF6;
+}
+
+input.amount {
+    float: left;
+    font-size: 18px;
+    height: 45px;
+    line-height: 45px;
+    overflow: hidden;
+    padding: 0;
+    text-align: center;
+    width: 60px;
+    font-family: arial;
+    border: #b2b2b2 1px solid;
+}
+
+input.amount-s {
+    font-size: 14px;
+    height: 26px;
+    line-height: 26px;
+    width: 34px;
+}
+
+a.cartCountBtn:last-child {
+    border-left: none;
+    border-radius: 0 4px 4px 0;
+}
+
+.cart-num:hover input.amount,
+.ui-num:hover input.amount {
+    border-top-color: #388CF6;
+    border-bottom-color: #388CF6;
+}
+
+.cart-num:hover a.cartCountBtn,
+.ui-num:hover a.cartCountBtn {
+    border-color: #388CF6;
+}
+
+
+/* E 计数器 */
+
+.cwhite.nohover:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.c32.nohover:hover {
+    text-decoration: none;
+    color: #323232;
+}
+
+
+/* S 领取失败弹窗调整 */
+
+.pop-tips-content {
+    max-height: 160px;
+    overflow-y: auto;
+    padding: 0 10px 0 0;
+    box-sizing: border-box;
+    width: 345px;
+}
+
+.pop-tips-content .tips {
+    padding-bottom: 5px;
+}
+
+.pop-tips-content::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+
+.pop-tips-content::-webkit-scrollbar-track {
+    background: #f6f6f6;
+    border-radius: 2px;
+}
+
+.pop-tips-content::-webkit-scrollbar-thumb {
+    background: #aaa;
+    border-radius: 2px;
+}
+
+.pop-tips-content::-webkit-scrollbar-thumb:hover {
+    background: #747474;
+}
+
+.pop-tips-content::-webkit-scrollbar-corner {
+    background: #f6f6f6;
+}
+
+
+/* E 领取失败弹窗调整 */
