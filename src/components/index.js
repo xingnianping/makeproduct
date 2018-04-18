@@ -1,7 +1,3 @@
-/**
- * @author shauning
- * Date: 18/03/20
- */
 import MetaInfo from './meta-info/index'
 import WLoadingBar from './loading-bar/index'
 import stButton from './button/index'
