@@ -1,3 +1,6 @@
+/**
+ * Created by 80002928 on 2018/3/23.
+ */
 import util from '../utils/common'
 import cookieUtil from '../utils/cookie'
 

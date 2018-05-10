@@ -1,5 +1,6 @@
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
+// __webpack_public_path__ = window.location.protocol === 'http:' ? 'http://i.sfimg.cn/store/replenish/' : 'https://is.sfimg.cn/store/replenish/'
 import Vue from 'vue'
 import App from './App'
 import router from './router/routing'

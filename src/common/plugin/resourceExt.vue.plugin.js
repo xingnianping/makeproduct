@@ -1,31 +1,6 @@
 import axios from 'axios'
 import cookieUtil from '../utils/cookie'
 
-// /*替换https*/
-// function replaceHttp(data){
-//   if(location.protocol=='https:'){
-//     var tempdata = JSON.stringify(data);
-//     var reg1 = new RegExp("http://p02.t.com","g");
-//     var reg2 = new RegExp("http://pic.t.com","g");
-//     var reg3 = new RegExp("http://store-v01.t.com","g");
-//     var reg4 = new RegExp("http://p02.sfbest.com","g");
-//     var reg5 = new RegExp("http://pic.sfbest.com","g");
-//     var reg6 = new RegExp("http://store-v01.sfbest.com","g");
-//     var reg7 = new RegExp("http://i.sfbest.com","g");
-//     var resultdata = tempdata.replace(reg1, 'https://ps02.sfbest.com');
-//     resultdata = resultdata.replace(reg2, 'https://pics.sfbest.com');
-//     resultdata = resultdata.replace(reg3, 'https://store-v01.sfbest.com');
-//     resultdata = resultdata.replace(reg4, 'https://ps02.sfbest.com');
-//     resultdata = resultdata.replace(reg5, 'https://pics.sfbest.com');
-//     resultdata = resultdata.replace(reg6, 'https://store-v01.sfbest.com');
-//     resultdata = resultdata.replace(reg7, 'https://is.sfbest.com');
-//     var retObj = JSON.parse(resultdata);
-//     return retObj;
-//   }else{
-//     return data;
-//   }
-// }
-
 /*替换https*/
 function replaceHttp(data){
   if(location.protocol=='https:'){
@@ -56,11 +31,12 @@ function replaceHttp(data){
     var tempdata = JSON.stringify(data);
     var reg1 = new RegExp("http://p02.sfbest.com","g");
     var reg2 = new RegExp("http://pic.sfbest.com","g");
-    var reg3 = new RegExp("http://store-v01.t.com","g");
+    var reg3 = new RegExp("http://store-v01.sfbest.com","g");
     var resultdata = tempdata.replace(reg1, 'http://p02.sfimg.cn');
     resultdata = resultdata.replace(reg2, 'http://pic.sfimg.cn');
     resultdata = resultdata.replace(reg3, 'http://store-v01.sfimg.cn');
-    return data;
+    var retObj = JSON.parse(resultdata);
+    return retObj;
   }
 }
 

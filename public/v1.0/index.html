@@ -1,1 +1,59 @@
-<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>店长工具</title><style>[v-cloak]{display:none}</style><link href=./css/app.46841e51df1eb1d042492b3497af3857.css rel=stylesheet></head><body><div id=app></div><script type=text/javascript src=./common.js></script><script type=text/javascript src=./js/manifest.7daeea6b556405e411d9.js></script><script type=text/javascript src=./js/vendor.2ce2a3695ae8b4968ab0.js></script><script type=text/javascript src=./js/app.3a279d07051ea98f8766.js></script></body></html>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>店长工具</title>
+    <style>
+        [v-cloak] {
+            display: none;
+        }
+    </style>
+    <script>
+        var domain = window.location.protocol === 'http:' ? 'http://i.sfimg.cn/store/replenish' : 'https://is.sfimg.cn/store/replenish'
+        var htmlWebpackPlugin = JSON.parse('{"files":{"publicPath":"/","chunks":{"manifest":{"size":0,"entry":"/js/manifest.d20c2e29733007e6c128.js","hash":"d20c2e29733007e6c128","css":[]},"vendor":{"size":151298,"entry":"/js/vendor.6b5517a4d5d3e92843af.js","hash":"6b5517a4d5d3e92843af","css":[]},"app":{"size":85075,"entry":"/js/app.35bf3a5b701f7343f8c3.js","hash":"35bf3a5b701f7343f8c3","css":["/css/app.6a8db0409ec8ce4a765f85bc5f23208a.css"]}},"js":["/common.js","/js/manifest.d20c2e29733007e6c128.js","/js/vendor.6b5517a4d5d3e92843af.js","/js/app.35bf3a5b701f7343f8c3.js"],"css":["/css/app.6a8db0409ec8ce4a765f85bc5f23208a.css"]},"options":{"template":"/Users/shauning/code/store/git/make/node_modules/_html-webpack-plugin@2.30.1@html-webpack-plugin/lib/loader.js!/Users/shauning/code/store/git/make/index.html","filename":"index.html","hash":false,"inject":false,"compile":true,"favicon":false,"minify":false,"cache":true,"showErrors":true,"chunks":"all","excludeChunks":[],"title":"Webpack App","xhtml":false,"chunksSortMode":"dependency"}}')
+        var cssLinkArr = htmlWebpackPlugin.files.css,jsSrcArr = htmlWebpackPlugin.files.js;
+        var head = document.getElementsByTagName('head')[0],body = document.getElementsByTagName('body')[0];
+        /*
+            config:{
+                eleName:script,link
+                type:text/javascript,text/css
+                //script
+                charset:
+                //link
+                rel:stylesheet
+            }
+        */
+        function createNode(config){
+            var node = document.createElement(config.eleName);
+            node.type = config.type;
+            if(config.eleName=='script'){
+                node.charset=config.charset;
+                node.src = config.url;
+            }else{
+                node.rel=config.rel;
+                node.href=config.url;
+            }
+            return node;
+        }
+        for(var i=0;i<cssLinkArr.length;i++){
+            var node = createNode({
+                eleName:'link',
+                type:'text/css',
+                rel:'stylesheet',
+                url:domain + cssLinkArr[i]
+            })
+            head.appendChild(node);
+        }
+    </script>
+</head>
+<body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+    <script>
+        for(var i=0;i<jsSrcArr.length;i++){
+            document.write(unescape("%3Cscript charset='utf-8' src='" + domain + jsSrcArr[i] + "' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+</body>
+</html>
